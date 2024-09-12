@@ -13,21 +13,10 @@ class Calculator:
     def subtract(self): return self.a - self.b
 
 
-data1 = Calculator(5, 7)
-
-print(data1.add())
-
-
 class CalculatorAdvanced(Calculator):
     def multiply(self): return self.a * self.b
 
     def divide(self): return self.a / self.b
-
-
-data2 = CalculatorAdvanced(4, 6)
-
-print(data2.subtract())
-print(data2.multiply())
 
 
 class CalculatorExtreme(CalculatorAdvanced):
@@ -36,12 +25,3 @@ class CalculatorExtreme(CalculatorAdvanced):
         self.c = c
 
     def add_three(self): return self.a + self.b + self.c
-
-
-data3 = CalculatorExtreme(3, 2, 8)
-
-print(data3.add_three())
-
-
-
-
